@@ -1,45 +1,85 @@
-# MNIST Dataset Classification using Neural Network
+# MNIST Digit Classification using Neural Network
 
-## Aim
+## Overview
 
-To build and evaluate a Neural Network model for handwritten digit classification using the MNIST dataset.
+This project implements a Neural Network for handwritten digit classification using the MNIST dataset.
+
+The model is built using TensorFlow/Keras and achieves approximately **97.43% test accuracy**.
 
 ## Dataset
 
-The MNIST dataset consists of 70,000 grayscale images of handwritten digits (0–9).
+MNIST Dataset
+
+* 70,000 grayscale handwritten digit images
+* 28 × 28 pixel resolution
+* 10 output classes (digits 0–9)
+
+Dataset Split:
 
 * Training Images: 60,000
 * Testing Images: 10,000
-* Image Size: 28 × 28 pixels
-* Number of Classes: 10
 
-## Methodology
+## Project Workflow
 
-1. Upload and extract the dataset.
-2. Load image and label files.
-3. Visualize sample images.
-4. Normalize pixel values.
-5. Build a feedforward neural network.
-6. Train the model using Adam optimizer.
-7. Evaluate performance on unseen test data.
-8. Visualize accuracy and loss curves.
-9. Generate confusion matrix.
-10. Perform sample predictions.
+1. Dataset Upload and Extraction
+2. Data Loading using IDX Files
+3. Data Visualization
+4. Pixel Value Normalization
+5. Neural Network Construction
+6. Model Training
+7. Model Evaluation
+8. Accuracy and Loss Visualization
+9. Confusion Matrix Generation
+10. Sample Predictions
 
 ## Neural Network Architecture
 
-* Input Layer: 784 neurons (Flatten Layer)
-* Hidden Layer 1: 128 neurons (ReLU)
-* Hidden Layer 2: 64 neurons (ReLU)
-* Output Layer: 10 neurons (Softmax)
+Input Layer:
+
+* Flatten (28×28 → 784)
+
+Hidden Layers:
+
+* Dense(128, ReLU)
+* Dense(64, ReLU)
+
+Output Layer:
+
+* Dense(10, Softmax)
 
 ## Results
 
-* Test Accuracy: 97.43%
-* Test Loss: 0.105
+| Metric        | Value  |
+| ------------- | ------ |
+| Test Accuracy | 97.43% |
+| Test Loss     | 0.105  |
 
-The model successfully classified handwritten digits with high accuracy and demonstrated strong generalization performance.
+## Visualizations
 
-## Conclusion
+* Sample Digit Visualization
+* Accuracy Curve
+* Loss Curve
+* Confusion Matrix
+* Sample Prediction
 
-The Neural Network effectively learned digit patterns from the MNIST dataset and achieved excellent classification performance with approximately 97.43% accuracy on unseen test data.
+## Technologies Used
+
+* Python
+* NumPy
+* TensorFlow
+* Keras
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+
+## Learning Outcomes
+
+* Neural Network Fundamentals
+* Image Classification
+* Data Preprocessing
+* Model Evaluation
+* Visualization of Training Performance
+
+## Author
+
+Panav Gohil
